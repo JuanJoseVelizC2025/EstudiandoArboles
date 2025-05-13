@@ -26,6 +26,17 @@ class Program
         Console.WriteLine("RECORRIDO POSTORDEN:  ");
         arbol.RecorrerPostOrden(arbol.Raiz);
         Console.WriteLine();
+
+        Console.WriteLine("¿EXISTE EL 7?  " + (arbol.Buscar(7) ? "SI" : "NO"));
+        Console.WriteLine("¿EXISTE EL 20?  " + (arbol.Buscar(20) ? "SI" : "NO"));
+
+        Console.WriteLine("\nELIMINA EL NODO 15...");
+        arbol.Eliminar(15);
+
+        Console.WriteLine("INORDEN DESPUES DE ELIMINAR 15:  ");
+        arbol.RecorrerInorden(arbol.Raiz);
+        Console.WriteLine();
+
     }
 
 }
